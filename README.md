@@ -8,13 +8,13 @@ Props: label, disabled, onObjectSelected
 -Typescript.\
 -HTML.\
 -CSS.\
-Node v20.15.0
-npm v10.7.0
+Node v20.15.0.\
+npm v10.7.0.\
 
 # Approach
-I focused my attention on applying an optimization technique to reduce the number of api calls when writing to the input (debounce technique)
-Realize and use a custom hooks
-BEM for css class names
+I focused my attention on applying an optimization technique to reduce the number of api calls when writing to the input (debounce technique).\
+Realize and use a custom hooks.\
+BEM for css class names.\
 
 # Improvements
 Apply virtualization/infinite scrolling or server pagination to results dropdown component in order to optimize performance 
