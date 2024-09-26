@@ -1,0 +1,46 @@
+.form {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+}
+
+.form__text, .form__checkbox, .form__radio {
+    margin-bottom: 15px;
+}
+
+.form__text {
+    input {
+        padding: 10px;
+        font-size: 15px;
+        width: 300px;
+    }
+}
+
+.form__checkbox {
+    display: flex;
+    input {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.form__radio {
+    width: 342px;
+    div {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    input {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.form__submit {
+    background-color: #646cff;
+    color: white;
+    align-self: end;
+}

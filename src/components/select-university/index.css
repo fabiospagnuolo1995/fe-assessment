@@ -1,0 +1,159 @@
+/*BEM naming convention for CSS class names: [block]__[element]--[modifier]*/
+
+.container {
+    display: flex;
+    flex-flow: column;
+    width: 500px;
+    position: relative;
+}
+
+.container__select {
+    display: flex;
+    flex-flow:column;
+    width: 100%;
+}
+
+.search {
+    display: inline-flex;
+    height: 50px;
+    border: 2px solid lightgray;
+    position: relative;
+    min-width: 0;
+    padding: 0;
+    vertical-align: top;
+    margin: 8px 8px 0 8px;
+    border-radius: 4px;
+    align-items: center;
+    &:focus-within {
+        border: 2px solid #3b82f680;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.search-red {
+    border-color: red !important;
+}
+
+.search-disabled {
+    background-color: whitesmoke;
+}
+
+.search__label {
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0 4px 0 4px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+    z-index: 1;
+    user-select: none;
+    pointer-events: auto;
+    max-width: calc(133% - 32px);
+    transform: translate(14px, -9px) scale(0.75);
+    background-color: white;
+}
+
+.search__label-red {
+    color: red !important
+}
+
+.search__input {
+    padding: 0;
+    height: 40px;
+    align-self: center;
+    margin-left: 16px;
+    width: 90%;
+    font: inherit;
+    letter-spacing: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+    box-sizing: content-box;
+    background: none;
+    display: block;
+    min-width: 0;
+    outline-color: transparent;
+    &:focus{
+        + label {
+            color: #3b82f680
+        }
+    }
+}
+
+.search__empty {
+    font-size: 12px;
+    color: red;
+    text-align: start;
+    margin-left: 8px
+}
+
+.options {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 8px;
+    min-height: 55px;
+    max-height: 495px;
+    overflow: auto;
+    border: 2px solid lightgray;
+    position: absolute;
+    top: 60px;
+    z-index: 99;
+    width: 481px;
+}
+
+.options::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.options::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.options::-webkit-scrollbar-thumb {
+  background: lightgray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.options::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+
+
+.options__box, .options__loader {
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    justify-content: start;
+}
+
+.options__box {
+    background-color: white;
+    border-radius: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
+    text-align: start;
+    border-bottom: 1px solid lightgray;
+    &:hover {
+        background-color: lightgray;
+        border-color: lightgray;
+    }
+    &:last-child {
+        border-bottom: 0px;
+    }
+}
