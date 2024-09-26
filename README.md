@@ -22,8 +22,8 @@ The component could be made reusable by providing additional prop for api call
 Missing tests
 
 # Start Project
-Download or clone repository
-In the project directory run:
+Download or clone repository, then
+in the project directory run:
 1) npm install
 2) npm run dev
 
