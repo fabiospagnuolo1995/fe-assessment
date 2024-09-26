@@ -14,7 +14,7 @@ I focused my attention on applying an optimization technique to reduce the numbe
 Realize and use a custom hooks
 BEM for css class names
 
-# IMPROVEMENTS
+# Improvements
 Apply virtualization/infinite scrolling or server pagination to results dropdown component in order to optimize performance 
 The component could be made reusable by providing additional prop for api call
 
@@ -22,6 +22,7 @@ The component could be made reusable by providing additional prop for api call
 Missing tests
 
 # Start Project
+Download or clone repository
 In the project directory run:
 1) npm install
 2) npm run dev
